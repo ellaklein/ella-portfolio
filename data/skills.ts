@@ -3,10 +3,11 @@
 export type Skill = { name: string; level: 1 | 2 | 3 | 4 | 5 };
 
 export const skills: Skill[] = [
-  { name: "UI/UX Design", level: 5 },
-  { name: "Webentwicklung", level: 4 },
-  { name: "TypeScript", level: 3 },
-  { name: "Next.js / React", level: 3 },
-  { name: "Three.js", level: 3 },
-  { name: "Adobe Illustrator", level: 4 }
+  { name: "User Experience Design", level: 5 },
+  { name: "Interaction Design", level: 5 },
+  { name: "Prototyping", level: 4 },
+  { name: "Figma", level: 5 },
+  { name: "React / Next.js", level: 3 },
+  { name: "Python", level: 4 },
+  { name: "Usability & Accessibility", level: 4 }
 ];

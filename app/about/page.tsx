@@ -29,15 +29,15 @@ export default function AboutPage() {
           </p>
 
            <p>
-           Dabei beschäftige ich mich ebenfalls intensiv mit Service Design und nutzerzentrierter Forschung. Ich analysiere Anforderungen im Anwendungskontext, leite daraus Konzepte ab und optimiere digitale Produkte im Hinblick auf Usability, Accessibility und Interaktion. Mein Ziel ist es, digitale Lösungen zu gestalten, die verständlich, sinnvoll und für Nutzer:innen relevant sind.
+           Dabei beschäftige ich mich ebenfalls intensiv mit Service Design und nutzerzentrierter Forschung. Ich analysiere Anforderungen im Anwendungskontext, leite daraus Konzepte ab und optimiere digitale Produkte im Hinblick auf Usability, Accessibility und Interaktion. Mein Ziel ist es, digitale Lösungen zu gestalten, die verständlich, sinnvoll und für Nutzer relevant sind.
            </p>
 
           <div className="badges">
-            <span className="badge">UI/UX</span>
-            <span className="badge">Web Development</span>
-            <span className="badge">Creative Coding</span>
-            <span className="badge">3D Interaction</span>
-            <span className="badge">Service Design</span>
+            <span className="badge">User Experience Design</span>
+            <span className="badge">Interaction Design</span>
+            <span className="badge">Prototyping</span>
+            <span className="badge">React / Next.js</span>
+            <span className="badge">Python</span>
           </div>
         </div>
 
