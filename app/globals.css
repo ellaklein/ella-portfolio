@@ -204,58 +204,281 @@ p{
   object-position: center top;
 }
 
-/* ---------- About ---------- */
-.about{
-  max-width: 1100px;
+/* ---------- About Page ---------- */
+.aboutPage {
+  max-width: 980px;
   margin: 0 auto;
+  padding: 22px 0 64px;
 }
 
-.aboutGrid{
+.aboutEyebrow {
+  display: none;
+}
+
+/* ---------- Hero ---------- */
+.aboutHero {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 28px;
+  align-items: center;
+  margin: 0 0 28px;
 }
 
-.aboutImageWrap{
+.aboutHeroText {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.aboutHeroText h1 {
+  margin: 0 0 40px;
+  font-size: clamp(26px, 4.8vw, 40px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.aboutLead {
+  margin: 0;
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.aboutSub {
+  margin: 8px 0 0;
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+/* ---------- Image ---------- */
+.aboutImageWrap {
   position: relative;
-  width: 100%;
-  height: 300px;
-  border-radius: 20px;
+  width: 200px;
+  height: 240px;
+  justify-self: end;
+  border-radius: 22px;
   overflow: hidden;
-  border: 1px solid rgba(47,93,138,0.22);
-  box-shadow: var(--shadow);
   background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
-.aboutImage{
+.aboutImage {
   object-fit: cover;
   object-position: center;
 }
 
-.badges{
+/* ---------- Badges ---------- */
+.badges {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 16px;
 }
 
-.badge{
+.badge {
   display: inline-flex;
-  padding: 6px 12px;
+  align-items: center;
+  padding: 7px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(47,93,138,0.22);
+  border: 1px solid rgba(47,93,138,0.18);
   background: rgba(47,93,138,0.08);
+  color: var(--text);
+  font-size: 12px;
   font-weight: 700;
-  font-size: 13px;
-  color: var(--accent);
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
 }
 
-.aboutSkills{
-  grid-column: 2 / 3;
-  margin-top: 14px;
+.badge:hover {
+  transform: translateY(-1px);
+  background: rgba(47,93,138,0.12);
+  border-color: rgba(47,93,138,0.28);
 }
-.aboutSkills .card{ max-width: 360px; }
+
+/* ---------- Content ---------- */
+.aboutContentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.aboutCard,
+.skillsPanel {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+.aboutCard:hover,
+.skillsPanel:hover {
+  transform: translateY(-2px);
+  border-color: rgba(47,93,138,0.24);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.08);
+}
+
+.aboutCard h2,
+.skillsPanel h2,
+.skillsPanel .sectionTitle {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.18;
+  color: var(--text);
+}
+
+.aboutCard p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.72;
+  color: var(--text);
+}
+
+.cardPink,
+.cardBlue,
+.cardGreen,
+.skillsPanel {
+  background: var(--surface);
+}
+
+.skillsPanel .card {
+  max-width: none;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ---------- About Socials ---------- */
+.aboutSocialsRow {
+  width: 100%;
+  margin-top: 72px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.aboutSocials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+.aboutSocialLabel {
+  display: none;
+}
+
+.aboutSocials .socialList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.aboutSocials .socialLink {
+  display: inline-flex;
+  align-items: center;
+  align-self: auto;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(47,93,138,0.18);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 800;
+  transition: border-color .15s ease, color .15s ease, transform .15s ease, background .15s ease;
+}
+
+.aboutSocials .socialLink:hover {
+  color: var(--accent);
+  border-color: rgba(47,93,138,0.35);
+  background: rgba(47,93,138,0.08);
+  transform: translateY(-1px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .aboutPage {
+    padding: 18px 0 48px;
+  }
+
+  .aboutHero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .aboutImageWrap {
+    justify-self: start;
+    width: 180px;
+    height: 220px;
+  }
+
+  .aboutContentGrid {
+    gap: 18px;
+  }
+
+  .aboutSocialsRow {
+    margin-top: 56px;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutHeroText h1 {
+    font-size: 34px;
+  }
+
+  .aboutLead {
+    font-size: 15px;
+  }
+
+  .aboutSub {
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .aboutCard,
+  .skillsPanel {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .aboutCard h2,
+  .skillsPanel h2,
+  .skillsPanel .sectionTitle {
+    font-size: 18px;
+  }
+
+  .aboutCard p {
+    font-size: 14px;
+    line-height: 1.68;
+  }
+
+  .aboutSocials .socialLink {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
 
 /* ---------- Projects ---------- */
 .projectsGrid{
