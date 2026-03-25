@@ -1,19 +1,39 @@
 // Autorin: Ella K.
 
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="header">
-      <div className="nav">
-        <Link href="/" className="brand">Ellas Portfolio</Link>
+      <nav className="nav">
+        <Link 
+          href="/" 
+          className={`brand ${pathname === "/" ? "activeBrand" : ""}`}
+        >
+          Ellas Portfolio
+        </Link>
 
-        <nav className="navLinks">
-          <Link href="/">Home</Link>
-          <Link href="/about">About me</Link>
-          <Link href="/projects">Projekte</Link>
-        </nav>
-      </div>
+        <div className="navLinks">
+          <Link
+            href="/about"
+            className={pathname === "/about" ? "active" : ""}
+          >
+            About me
+          </Link>
+
+          <Link
+            href="/projects"
+            className={pathname === "/projects" ? "active" : ""}
+          >
+            Projekte
+          </Link>
+        </div>
+      </nav>
     </header>
   );
 }

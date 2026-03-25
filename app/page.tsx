@@ -27,7 +27,6 @@ export default function HomePage() {
           <div className="ctaRow">
             <Link className="buttonPrimary" href="/projects">Zu meinen Projekten</Link>
             <Link className="button" href="/about">About me</Link>
-            <Link className="button" href="/contact">Kontakt</Link>
           </div>
         </div>
 

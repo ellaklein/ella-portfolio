@@ -40,7 +40,7 @@ export default function AboutPage() {
         <article className="aboutCard cardPink">
           <h2>Design & Konzeption</h2>
           <p>
-            Ich entwickle Gestaltungskonzepte mit Fokus auf visuelle Klarheit, Struktur und Typografie. Dabei arbeite ich mit Layout, Hierarchie und Interaktion, um Interfaces zu entwerfen, die sowohl ästhetisch als auch funktional überzeugen. Von ersten Ideen über Wireframes bis hin zu interaktiven Prototypen begleite ich den gesamten Designprozess und treffe bewusste gestalterische Entscheidungen.
+            Ich entwickle Gestaltungskonzepte mit Fokus auf visuelle Klarheit, Struktur und Typografie. Dabei arbeite ich mit Layout, Hierarchie und Interaktion, um Interfaces zu entwerfen, die sowohl ästhetisch als auch funktional überzeugen. Von ersten Ideen über Wireframes bis hin zu interaktiven Prototypen begleite ich den gesamten Designprozess und gestalte Lösungen, die klar und funktional sind.
           </p>
         </article>
 
