@@ -43,7 +43,7 @@ a:hover, a:focus, a:active{
 
 .main{
   flex: 1;
-  padding: 28px 20px 60px;
+  padding: 32px 20px 60px;
 }
 
 .container,
@@ -110,12 +110,12 @@ a:hover, a:focus, a:active{
 h1, .pageTitle{
   font-size: 34px;
   line-height: 1.1;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
 }
 
 p{
   line-height: 1.55;
-  margin: 0 0 12px;
+  margin: 0 0 15px;
 }
 
 .muted{ color: var(--muted); }
@@ -171,7 +171,8 @@ p{
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .heroRight{
@@ -220,9 +221,9 @@ p{
 
 /* ---------- About Page ---------- */
 .aboutPage {
-  max-width: 980px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 22px 0 64px;
+  padding: 0 0 64px;
 }
 
 .aboutEyebrow {
@@ -232,13 +233,16 @@ p{
 /* ---------- Hero ---------- */
 .aboutHero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 200px;
-  gap: 28px;
+  grid-template-columns: 200px minmax(0, 1fr);
+  grid-template-areas: "image text";
+  gap: 40px;
   align-items: center;
   margin: 0 0 28px;
 }
 
 .aboutHeroText {
+  grid-area: text;
+  width: 100%;
   max-width: 620px;
   display: flex;
   flex-direction: column;
@@ -247,8 +251,8 @@ p{
 }
 
 .aboutHeroText h1 {
-  margin: 0 0 40px;
-  font-size: clamp(26px, 4.8vw, 40px);
+  margin: 0 0 20px;
+  font-size: 34px;
   line-height: 0.98;
   letter-spacing: -0.04em;
   color: var(--text);
@@ -272,11 +276,12 @@ p{
 
 /* ---------- Image ---------- */
 .aboutImageWrap {
+  grid-area: image;
   position: relative;
-  width: 220px;
-  height: 240px;
-  justify-self: end;
-  border-radius: 22px;
+  width: 200px;
+  height: 200px;
+  justify-self: start;
+  border-radius: 20px;
   overflow: hidden;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -294,7 +299,7 @@ p{
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .badge {
@@ -428,11 +433,14 @@ p{
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
   .aboutPage {
-    padding: 18px 0 48px;
+    padding: 18px 0 40px;
   }
 
   .aboutHero {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
     gap: 20px;
     align-items: start;
   }
@@ -498,7 +506,7 @@ p{
 .projectsGrid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 28px;
   margin-top: 30px;
   align-items: stretch;
 }
@@ -564,93 +572,6 @@ p{
   color: #2e5c82;
 }
 
-/* ---------- Contact ---------- */
-.contactGrid{
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.form{
-  margin-top: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.label{
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-weight: 700;
-}
-
-.input, .textarea{
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  background: #fff;
-  font: inherit;
-  transition: border-color .15s ease, box-shadow .15s ease;
-}
-
-.input:focus, .textarea:focus{
-  outline: none;
-  border-color: rgba(47,93,138,0.45);
-  box-shadow: 0 0 0 4px rgba(47,93,138,0.10);
-}
-
-.textarea{ resize: vertical; min-height: 140px; }
-
-.btnPrimary{
-  width: 100%;
-  padding: 12px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(19, 45, 71, 0.45);
-  background: var(--accent);
-  color: #fff;
-  font-weight: 900;
-  cursor: pointer;
-  transition: transform .15s ease, opacity .15s ease;
-}
-
-.btnPrimary:hover{
-  transform: translateY(-1px);
-  opacity: 0.96;
-}
-
-.formStatus{ margin: 6px 0 0; color: var(--muted); }
-
-.socialList{
-  margin: 12px 0 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.socialLink{
-  display: inline-flex;
-  align-items: center;
-  align-self: flex-start;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(47,93,138,0.06);
-  font-weight: 800;
-  white-space: nowrap;
-  transition: border-color .15s ease, color .15s ease, transform .15s ease, background .15s ease;
-}
-
-.socialLink:hover{
-  color: var(--accent);
-  border-color: rgba(47,93,138,0.35);
-  background: rgba(47,93,138,0.10);
-  transform: translateY(-1px);
-}
 
 /* ---------- Footer ---------- */
 .footer{
@@ -692,5 +613,9 @@ p{
     grid-template-columns: 1fr;
     min-height: auto;
     gap: 22px;
+  }
+
+  .portraitRing{
+    margin-top: 32px;
   }
 }
