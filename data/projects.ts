@@ -55,24 +55,6 @@ export const projects: Project[] = [
         "Screenshot der Benutzeroberfläche des Hangman-Spiels mit Anzeige des aktuellen Spielzustands und der Eingabelogik.",
     },
   },
-  {
-  slug: "student-db",
-  title: "Student DB",
-  subtitle: "Next.js Anwendung mit externer API & Filterfunktion",
-  short:
-    "Frontend-Anwendung mit API-Anbindung, URL-basierter Filterlogik und Grid-Layout.",
-  description:
-    "Student DB ist eine Webanwendung zur Darstellung von Studierendenprofilen, die über eine externe API geladen werden. Ziel des Projekts war es, Daten dynamisch abzurufen, strukturiert darzustellen und über URL-Parameter filterbar zu machen.\n\nDie Filterlogik (z. B. nach Geschlecht) wird direkt über die URL gesteuert, wodurch sich Ansichten teilen und reproduzieren lassen. Zusätzlich wurde ein responsives Grid-Layout umgesetzt sowie auf eine klare Komponentenstruktur geachtet.",
-  tags: ["Next.js", "React", "API", "TypeScript"],
-  role: "Frontend",
-  tech: ["Next.js", "React", "TypeScript"],
-    codeImage: {
-      src: "/studentdb.png",
-      alt: "Screenshot der Student DB Anwendung",
-      description:
-        "Screenshot der Webanwendung mit Grid-Layout und Filterfunktion.",
-    },
-  },
     {
   slug: "deadmans-hand",
   title: "Deadman’s Hand Poker-Spiel",

@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footerInner">
-        <div>© 2025 Ella K.</div>
+        <div>© 2026 Ella K.</div>
         <div>Seitenaufruf: {formatted}</div>
       </div>
     </footer>
