@@ -36,7 +36,7 @@ export default function HomePage() {
     <div className="portraitOuter">
       <div className="portraitInner">
         <Image
-          src="/cutout2.png"
+          src="/miau.png"
           alt="Portrait von Ella"
           fill
           priority

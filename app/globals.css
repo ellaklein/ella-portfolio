@@ -214,9 +214,9 @@ p{
   background: var(--bg);
 }
 
-.portraitImage{
+.portraitImage {
   object-fit: cover;
-  object-position: center top;
+  object-position: center 40%;
 }
 
 /* ---------- About Page ---------- */
