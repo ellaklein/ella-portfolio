@@ -133,16 +133,17 @@ export const projects: Project[] = [
   short:
     "Web-App mit Datenbankanbindung, Login-System und bewusst integrierten Sicherheitslücken zur Analyse und praktischen Angriffssimulation.",
   description:
-    "Im Rahmen dieses Projekts wurde eine Notiz-Webanwendung mit Datenbankanbindung und grundlegender Benutzerverwaltung entwickelt. Neben klassischen Funktionen wie dem Erstellen, Speichern und Verwalten von Notizen stand vor allem der praktische Umgang mit Web Security im Mittelpunkt.\n\nEin besonderer Teil des Projekts bestand darin, gezielt Schwachstellen in die Anwendung einzubauen, um diese anschließend im Kurs gegenseitig in virtuellen Maschinen anzugreifen und zu analysieren. Dadurch konnten typische Sicherheitslücken nicht nur theoretisch verstanden, sondern praktisch nachvollzogen und ausgenutzt werden.\n\nDas Projekt verband Webentwicklung mit sicherheitsrelevanten Konzepten und vermittelte ein besseres Verständnis dafür, wie Angriffe auf Webanwendungen funktionieren, welche Risiken durch unsichere Implementierungen entstehen und warum Sicherheit bereits bei der Entwicklung mitgedacht werden muss.",
+    "Im Rahmen dieses Projekts wurde eine Notiz-Webanwendung mit Datenbankanbindung, Login-Authentifizierung und grundlegender Benutzerverwaltung entwickelt. Neben klassischen Funktionen wie dem Erstellen, Speichern und Verwalten von Notizen stand vor allem der praktische Umgang mit Web Security im Mittelpunkt.\n\nEin besonderer Teil des Projekts bestand darin, gezielt Schwachstellen in die Anwendung einzubauen, um diese anschließend im Kurs gegenseitig in virtuellen Maschinen anzugreifen und zu analysieren. Dadurch konnten typische Sicherheitslücken nicht nur theoretisch verstanden, sondern praktisch nachvollzogen und ausgenutzt werden.\n\nDas Projekt verband Webentwicklung mit sicherheitsrelevanten Konzepten und vermittelte ein besseres Verständnis dafür, wie Angriffe auf Webanwendungen funktionieren, welche Risiken durch unsichere Implementierungen entstehen und warum Sicherheit bereits bei der Entwicklung mitgedacht werden muss.",
   tags: ["Security", "Web", "Datenbank", "Authentication", "VM"],
   role: "Konzept & Umsetzung",
   tech: ["JavaScript", "Node.js", "Database"],
   codeImage: {
-    src: "/security.png",
+    src: "/scratchpadd.png",
     alt: "Screenshot der Notiz Web App",
     description:
-      "Bearbeitungsansicht einer Notiz innerhalb der Web App.",
+      "Das Bild zeigt das Dashboard der Notiz-Webanwendung Scratchpad mit aktivierten Dev-Demos, die auf bewusst integrierte Sicherheitslücken für Test- und Analysezwecke hinweisen.",
   },
+  
 },
 {
   slug: "informationsdesign-diagramme",
